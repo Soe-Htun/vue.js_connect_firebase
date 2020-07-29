@@ -1,8 +1,8 @@
 <template>
   <div class="cont">
     <div class="login">
-      <el-input id="name" v-model="name" placeholder="EmailAddress"></el-input>
-      <el-input type="password" id="password" v-model="password" placeholder="Password"></el-input>
+      <input id="name" v-model="name" placeholder="EmailAddress" /><br>
+      <input type="password" id="password" v-model="password" placeholder="Password" />
       <br />
       <span @click="show_hide()">
         <i v-if="hide" class="far fa-eye-slash"></i>
@@ -120,27 +120,27 @@ export default {
   position: fixed;
   top: 50%;
   left: 50%;
-  margin: -180px 0px 0px -150px;
-  width: 280px;
-  height: 260px;
+  margin: -180px 0px 0px -250px;
+  width: 350px;
+  height: 340px;
   background-color: rgb(240, 240, 240);
   border-radius: 10px;
    background: url("./../assets/football.jpg") no-repeat;
   background-size: 100% 100%;
 }
 #regname {
-  margin-top: 50px;
+  margin-top: 80px;
   width: 200px;
-  height: 35px;
+  height: 40px;
 }
 #regpassword{
   margin-top: 25px;
   width: 200px;
-  height: 35px;
+  height: 40px;
 }
 #signbtn {
   margin-top: 30px;
-  height: 38px;
+  height: 42px;
   border-radius: 5px;
   width: 90px;
 }
@@ -148,7 +148,7 @@ export default {
   margin-top: 30px;
   color: white;
   width: 90px;
-  height: 38px;
+  height: 42px;
   border-radius: 5px;
   border: 1px solid #409eff;
   background-color: #409eff;
@@ -170,30 +170,40 @@ export default {
   margin: -100px 0px 0px -220px;
 }
 #name {
-  text-indent: 20px;
+ text-indent: 10px;
   width: 220px;
-  height: 39px;
+   height: 40px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  outline: none;
 }
 #password {
+outline: none;
   margin: 25px 0px;
-  text-indent: 20px;
+  text-indent: 10px;
   width: 220px;
-  height: 39px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid grey;
 }
 #btn {
   margin-top:5px ;
   margin-left: 0px;
-  width: 95px;
+  width: 100px;
+  border-radius: 10px;
+  height: 45px;
 }
 #sign {
   margin-left: 20px;
-  width: 92px;
+  width: 100px;
   min-width: 100px;
+  border-radius: 10px;
+  height: 45px;
 }
 i {
   position: absolute;
   top: 45%;
-  left: 69%;
+  left: 89%;
 }
 </style>
 
